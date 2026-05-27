@@ -1,0 +1,6 @@
+{
+  "name": "Calculator",
+  "description": "A feature-rich, beautiful scientific calculator with collapsable scientific panel, full history of calculations, copy-to-clipboard, and an immersive dark navy UI theme.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
