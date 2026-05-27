@@ -54,6 +54,9 @@ class CalculatorViewModel : ViewModel() {
     private fun evaluateLive(expression: String): String {
         val trimmed = expression.trim()
         if (trimmed.isEmpty()) return "0"
+        if (trimmed == "Error" || trimmed == "Domain error" || trimmed == "Infinity" || trimmed == "-Infinity") {
+            return trimmed
+        }
 
         // Handle a simple single number first
         val plainDouble = trimmed.replace(" ", "").replace("−", "-").toDoubleOrNull()
